@@ -1,0 +1,54 @@
+/* We set icon fonts without a generic fallback. */
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@font-face {
+	font-family: automatewoo-referrals-icons;
+	src: url(../fonts/automatewoo-referrals-iconfont.eot);
+	src:
+		url(../fonts/automatewoo-referrals-iconfont.eot?#iefix) format("embedded-opentype"),
+		url(../fonts/automatewoo-referrals-iconfont.woff) format("woff"),
+		url(../fonts/automatewoo-referrals-iconfont.ttf) format("truetype"),
+		url(../fonts/automatewoo-referrals-iconfont.svg#Flaticon) format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+
+	@font-face {
+		font-family: automatewoo-referrals-icons;
+		src: url(../fonts/automatewoo-referrals-iconfont.svg#Flaticon) format("svg");
+	}
+}
+
+%automatewoo-referrals-icon {
+	display: inline-block;
+	font-family: automatewoo-referrals-icons;
+	font-style: normal;
+	font-weight: 400;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-rendering: optimizelegibility;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	/* stylelint-disable property-no-unknown -- We use a non-standard feature. */
+	font-smooth: antialiased;
+	/* stylelint-enable property-no-unknown */
+}
+
+%automatewoo-referrals-icon--mail {
+	content: "\EA01";
+}
+
+%automatewoo-referrals-icon--twitter {
+	content: "\EA03";
+}
+
+%automatewoo-referrals-icon--facebook {
+	content: "\EA02";
+}
+
+%automatewoo-referrals-icon--whatsapp {
+	content: "\EA04";
+}
